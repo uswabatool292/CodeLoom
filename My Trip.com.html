@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trip.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: green;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url(C:/Users/Dell/Documents/Project/images/trip.jpg) no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        #home {
+    background: url(C:/Users/Dell/Documents/Project/images/car.jpg) no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding:  20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button {
+    color: white;
+    background: yellowgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: yellowgreen;
+}
+
+        .login-form {
+            background:rgb(56, 48, 48) ;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .team, .destinations {
+            display: flex;
+            flex-wrap:wrap ;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .member, .destination  {
+            width: 250px;
+            text-align: center;
+        }
+
+        .member .image, .destination .image {
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .member, .destination {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .package {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.packages {
+    width: 250px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.packages .image {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.packages h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.packages p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.packages a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.packages a:hover {
+    background-color: yellowgreen;
+}
+
+   
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea{
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: yellowgreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: yellowgreen;
+        }
+        .footer{
+            position:center;
+            background :yellowgreen;
+            text-align:center;
+            padding: 50px;
+            font-family:Times ;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Trip.com</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="login-form">
+            <h2>Login in My Trip.com</h2>
+            <form action="#home">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="forget">
+                </div>                                                          <button onclick="window.location.href='home'">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="home" class="section">
+        <h1>Welcome to My trip.com</h1>
+        <p> Your gateway to unforgettable adventures! We are dedicated to making your travel experience seamless, exciting, and hassle-free. When you choose us, you’re not just booking a trip—you’re unlocking a world of carefully curated destinations, expert-guided tours, and personalized travel packages designed to fit your needs. Whether you seek adventure, relaxation, or cultural exploration, we ensure every journey is safe, comfortable, and filled with incredible memories. With our expert team, affordable packages, and round-the-clock customer support, your dream vacation starts here. Let’s explore the world together!</p>
+        <a href="#" class="hero-button"> Book now</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="team">
+            <div class="member">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/add.jpg);"></div>
+                <h3>John Doe</h3>
+                <p class="description">Passionate traveler with years of experience exploring the world and sharing insights.</p>
+            </div>
+            <div class="member">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/bro.webp);"></div>
+                <h3>Jane Smith</h3>
+                <p class="description">An expert adventure guide who loves helping travelers discover new experiences.</p>
+            </div>
+            <div class="member">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/download.jpg);"></div>
+                <h3>Mike Johnson</h3>
+                <p class="description">A travel blogger who captures breathtaking moments and shares hidden gems worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="section">
+        <h2>Destinations</h2>
+        <div class="destinations">
+            <div class="destination">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/farance.jpg);"></div>
+                <h3>France</h3>
+                <p class="description">Explore the iconic Eiffel Tower, enjoy fine wine, and immerse yourself in rich history.</p>
+            </div>
+            <div class="destination">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/turkey.jpg);"></div>
+                <h3>Turkey</h3>
+                <p class="description">Experience the blend of East and West, from Istanbul’s bustling bazaars to Cappadocia’s landscapes.</p>
+            </div>
+            <div class="destination">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/seoul.jpg);"></div>
+                <h3>South Korea</h3>
+                <p class="description">Discover the modern energy of Seoul, ancient palaces, and breathtaking mountain views.</p>
+            </div>
+            <div class="destination">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/switzerland.jpg);"></div>
+                <h3>Switzerland</h3>
+                <p class="description">Enjoy the stunning Alps, picturesque lakes, and world-renowned Swiss chocolate.</p>
+            </div>
+            <div class="destination">
+              <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/japan.jpg);"></div>
+              <h3>Japan</h3>
+              <p class="description">Experience the perfect blend of ancient tradition and futuristic wonders—your unforgettable Japan adventure awaits.</p>
+          </div>
+          <div class="destination">
+            <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/brazil.jpg);"></div>
+            <h3>Brazil</h3>
+            <p class="description">Discover the rhythm of Brazil—golden beaches, vibrant culture, and breathtaking adventures await.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section">
+        <h2>Travel Packages</h2>
+        <div class="package"> 
+            <div class="packages">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/cheap.jpg);"></div>
+                <h3>Normal Package </h3>
+                <p>Includes basic accommodations and guided tours at affordable rates.</p>
+                <a href="#">More Info</a>
+            </div>
+            <div class="packages">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/inhanced.webp);"></div>
+                <h3>Standard Package</h3>
+                <p>Enhanced accommodations, premium tours, and additional amenities.</p>
+                <a href="#">More Info</a>
+            </div>
+            <div class="packages">
+                <div class="image" style="background-image: url(C:/Users/Dell/Documents/Project/images/luxurey.jpg);"></div>
+                <h3>Premium Package</h3>
+                <p>Luxury stays, private tours, and exclusive experiences for a top-tier journey.</p>
+                <a href="#">More Info</a> 
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="phone" placeholder="Your Phone Number" required>
+            <textarea placeholder="Your feedback" required></textarea>
+            <button type="submit">Send</button>
+        </form>  
+    </section>
+    <footer>
+        <div class="footer">
+            <h2>My Trip.com</h2>
+            <b><p>Your gateway to unforgetable adventures.Explore,experience and enjoy!
+            </p></b>
+            <b><p>Email:support@mytrip.com</p></b>
+            <b><p>Phone:030-567-7809</p></b>
+            <b><p>Adress:456 travel Street,Adventure city</p></b>
+            <b><p>copy; 2025 My Trip.com| All rights are resered.</p></b>
+
+
+        </div>
+    </footer>
+</body>
+</html>
